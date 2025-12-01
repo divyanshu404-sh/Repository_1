@@ -25,6 +25,7 @@ int main(){
     while(fgets(content,sizeof(content),fs)!=NULL){
         fputs(content,fd);
     }
-    
+    fclose(fs);
+    fclose(fd);
 return 0;
 }
